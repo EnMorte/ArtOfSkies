@@ -32,7 +32,7 @@ public class CameraBehavior : MonoBehaviour
     private void RotateCamera(float x, float y)
     {
         transform.RotateAround(_airshipPosition, Vector3.down, x * cameraSpeed);
-        transform.RotateAround(_airshipPosition, Vector3.right, y * cameraSpeed);
+        transform.RotateAround(_airshipPosition, Vector3.left, y * cameraSpeed);
         transform.LookAt(_airshipPosition);
     }
 }
